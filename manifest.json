@@ -1,0 +1,58 @@
+{
+    "name": "XDownloader",
+    "id": "xdownloader",
+    "packaging_format": 1,
+    "description": {
+        "en": "XDownloader package for YunoHost.",
+        "fr": "XDownloader pour YunoHost."
+    },
+    "version": "1.0",
+    "url": "https://github.com/YunoHost-Apps/xdownloader_ynh",
+    "license": "free",
+    "maintainer": {
+        "name": "liberodark",
+        "email": "liberodark@gmail.com"
+    },
+    "requirements": {
+        "yunohost": ">= 2.7.2"
+    },
+    "multi_instance": false,
+    "services": [
+        "nginx",
+        "php5-fpm",
+        "mysql"
+    ],
+    "arguments": {
+        "install": [{
+                "name": "domain",
+                "type": "domain",
+                "ask": {
+                    "en": "Choose a domain name for XDownloader",
+                    "fr": "Choisissez un nom de domaine pour XDownloader"
+                },
+                "example": "example.com"
+            },
+
+            {
+                "name": "path",
+                "type": "path",
+                "ask": {
+                    "en": "Choose a path for XDownloader /xd is accepted",
+                    "fr": "Choisissez un chemin pour XDownloader /xd est accepté"
+                },
+                "example": "/xd",
+                "default": "/xd"
+            },
+            
+            {
+                "name": "is_public",
+                "type": "boolean",
+                "ask": {
+                    "en": "Is it a public site ?",
+                    "fr": "Est-ce un site public ?"
+                },
+                "default": "true"
+            }
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+SOURCE_URL=https://github.com/YunoHost-Apps/xdownloader_ynh/releases/download/1.0/xdownloader.tar.gz
+SOURCE_SUM=b42db6efe824cbecc44b333c609e25b25cd31e31379953e69752d5e5a42210579d12cc8e6196713ad15bd5e646758956c7126679736a0543f012e7dd3447b7a1
+SOURCE_SUM_PRG=sha512sum
+SOURCE_FORMAT=tar.gz
+SOURCE_IN_SUBDIR=true
+SOURCE_EXTRACT=true
+SOURCE_FILENAME=xdownloader.tar.gz
